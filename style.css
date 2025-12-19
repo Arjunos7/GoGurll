@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+/* ---------------------- */
+/* BACKGROUND */
+/* ---------------------- */
+
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ---------------------- */
+/* DECORATIVE IMAGES */
+/* ---------------------- */
+
+.bg-img {
+  position: absolute;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.left-center {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* ---------------------- */
+/* CONTENT */
+/* ---------------------- */
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------------------- */
+/* LOGO */
+/* ---------------------- */
+
+.logo {
+  width: 500px;
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 28px;
+}
+
+/* ---------------------- */
+/* TEXT */
+/* ---------------------- */
+
+.coming {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.sub {
+  display: block;
+  font-size: 16px;
+  opacity: 0.75;
+  margin-top: 8px;
+}
+
+/* ---------------------- */
+/* INFO SECTION */
+/* ---------------------- */
+
+.info {
+  margin-top: 32px;
+}
+
+.info p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.info i {
+  margin-right: 8px;
+}
+
+.info a {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.info a:hover {
+  opacity: 0.7;
+}
+
+/* ---------------------- */
+/* RESPONSIVE TEXT */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+  .coming {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  .sub {
+    font-size: 14px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .bg-img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 300px;
+    max-width: 90%;
+  }
+
+  .coming {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .sub {
+    font-weight: 300;
+  }
+
+  .info {
+    margin-top: 24px;
+  }
+
+  .bg-img {
+    width: 140px;
+  }
+}
